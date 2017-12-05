@@ -19,6 +19,10 @@ public class Startup {
         List<Map> mapList = new ArrayList() ;
         String secondNameState = "";
 
+        List<String> appendFile = new ArrayList();
+        appendFile.add("Billy Bob\n490 W. Research Dr.\nWauwatosa, WI 54332");
+        fileService.writeFile(file, appendFile, true);
+        
         try {
             for (int i = 0; i < lineList.size(); i++) {
 
@@ -55,6 +59,8 @@ public class Startup {
         }
         
         System.out.println(secondNameState);
+        
+        
         
     }
 
