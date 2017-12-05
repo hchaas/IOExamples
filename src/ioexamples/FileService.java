@@ -77,7 +77,7 @@ public class FileService {
         int lineCount = 0;
         while (line != null) {
             while (lineCount < 3) {
-                line += reader.readLine() + " ";
+                line += reader.readLine();
                 lineCount++;
             }
             //this migth need to be -1 to account for a blank line
